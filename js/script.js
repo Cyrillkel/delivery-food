@@ -84,53 +84,6 @@ const restsFunc = () => {
     },
   ];
 
-  const goodsArray = [
-    {
-      id: 0,
-      image: "goods-1.jpg",
-      title: "Ролл угорь стандарт",
-      descr: "Рис, угорь, соус унаги, кунжут, водоросли нори.",
-      price: "250",
-    },
-    {
-      id: 1,
-      image: "goods-2.jpg",
-      title: "Калифорния лосось стандарт",
-      descr:
-        "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
-      price: "395",
-    },
-    {
-      id: 2,
-      image: "goods-3.jpg",
-      title: "Окинава стандарт",
-      descr: "Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...",
-      price: "250",
-    },
-    {
-      id: 3,
-      image: "goods-4.jpg",
-      title: "Цезарь маки хl",
-      descr:
-        "Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...",
-      price: "250",
-    },
-    {
-      id: 4,
-      image: "goods-5.jpg",
-      title: "Ясай маки стандарт 185 г",
-      descr: "Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг",
-      price: "250",
-    },
-    {
-      id: 5,
-      image: "goods-6.jpg",
-      title: "Ролл с креветкой стандарт",
-      descr: "Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы",
-      price: "250",
-    },
-  ];
-
   const loading = () => {
     container.innerHTML =
       '<p style="width: 100%; text-align: center;">Загрузка</p>';
@@ -181,7 +134,60 @@ const restsFunc = () => {
     }, 1000);
   }
 
+  //Goods page
   const containerGoods = document.querySelector("#container-goods");
+
+  const goodsArray = [
+    {
+      id: 0,
+      image: "goods-1.jpg",
+      title: "Ролл угорь стандарт",
+      descr: "Рис, угорь, соус унаги, кунжут, водоросли нори.",
+      price: "250",
+    },
+    {
+      id: 1,
+      image: "goods-2.jpg",
+      title: "Калифорния лосось",
+      descr:
+        "Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.",
+      price: "395",
+    },
+    {
+      id: 2,
+      image: "goods-3.jpg",
+      title: "Окинава стандарт",
+      descr: "Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...",
+      price: "250",
+    },
+    {
+      id: 3,
+      image: "goods-4.jpg",
+      title: "Цезарь маки хl",
+      descr:
+        "Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...",
+      price: "250",
+    },
+    {
+      id: 4,
+      image: "goods-5.jpg",
+      title: "Ясай маки стандарт 185 г",
+      descr: "Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг",
+      price: "250",
+    },
+    {
+      id: 5,
+      image: "goods-6.jpg",
+      title: "Ролл с креветкой стандарт",
+      descr: "Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы",
+      price: "250",
+    },
+  ];
+
+  const loadingGoods = () => {
+    containerGoods.innerHTML =
+      '<p style="width: 100%; text-align: center;">Загрузка</p>';
+  };
 
   const renderGoods = (array) => {
     containerGoods.innerHTML = "";
@@ -215,7 +221,10 @@ const restsFunc = () => {
   };
 
   if (containerGoods) {
-    renderGoods(goodsArray);
+    loadingGoods();
+    setTimeout(() => {
+      renderGoods(goodsArray);
+    }, 1000);
   }
 };
 
