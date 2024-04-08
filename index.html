@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./js/script.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -25,7 +26,7 @@
               <img src="./img/icons/user.png" alt="user">
               Войти
             </button>
-            <button class="btn btn-outline">
+            <button class="btn btn-outline" id="busket">
               <img src="./img/icons/shopping-cart.png" alt="cart">
               Корзина
             </button>
@@ -56,169 +57,7 @@
             </h3>
             <input type="text" class="products-header__search" placeholder="Поиск блюд и ресторанов">
           </div>
-          <div class="product-wrapper">
-            <a href="./goods.html" class="product-card">
-              <div class="product-card__image">
-                <img src="./img/rests/pizza-plus.jpg" alt="pizza-plus">
-              </div>
-              <div class="product-card__description">
-                <div class="product-card__description-row">
-                  <h4 class="product-card__title">
-                    Пицца плюс
-                  </h4>
-                  <div class="product-card__badge">50 мин</div>
-                </div>
-                <div class="product-card__description-row">
-                  <div class="product-card__description-info">
-                    <div class="product-card__description-info product-card__description-info_raiting">
-                      <img src="./img/icons/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_price">
-                      от 900 ₽
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="./goods.html" class="product-card">
-              <div class="product-card__image">
-                <img src="./img/rests/pizza-tanuki.jpg" alt="pizza-plus">
-              </div>
-              <div class="product-card__description">
-                <div class="product-card__description-row">
-                  <h4 class="product-card__title">
-                    Тануки
-                  </h4>
-                  <div class="product-card__badge">50 мин</div>
-                </div>
-                <div class="product-card__description-row">
-                  <div class="product-card__description-info">
-                    <div class="product-card__description-info product-card__description-info_raiting">
-                      <img src="./img/icons/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_price">
-                      от 900 ₽
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="./goods.html" class="product-card">
-              <div class="product-card__image">
-                <img src="./img/rests/pizza-foodband.jpg" alt="pizza-plus">
-              </div>
-              <div class="product-card__description">
-                <div class="product-card__description-row">
-                  <h4 class="product-card__title">
-                    FoodBand
-                  </h4>
-                  <div class="product-card__badge">50 мин</div>
-                </div>
-                <div class="product-card__description-row">
-                  <div class="product-card__description-info">
-                    <div class="product-card__description-info product-card__description-info_raiting">
-                      <img src="./img/icons/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_price">
-                      от 900 ₽
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="./goods.html" class="product-card">
-              <div class="product-card__image">
-                <img src="./img/rests/pizza-jadina.jpg" alt="pizza-plus">
-              </div>
-              <div class="product-card__description">
-                <div class="product-card__description-row">
-                  <h4 class="product-card__title">
-                    Жадина-пицца
-                  </h4>
-                  <div class="product-card__badge">50 мин</div>
-                </div>
-                <div class="product-card__description-row">
-                  <div class="product-card__description-info">
-                    <div class="product-card__description-info product-card__description-info_raiting">
-                      <img src="./img/icons/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_price">
-                      от 900 ₽
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="./goods.html" class="product-card">
-              <div class="product-card__image">
-                <img src="./img/rests/pizza-dot.jpg" alt="pizza-plus">
-              </div>
-              <div class="product-card__description">
-                <div class="product-card__description-row">
-                  <h4 class="product-card__title">
-                    Точка еды
-                  </h4>
-                  <div class="product-card__badge">50 мин</div>
-                </div>
-                <div class="product-card__description-row">
-                  <div class="product-card__description-info">
-                    <div class="product-card__description-info product-card__description-info_raiting">
-                      <img src="./img/icons/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_price">
-                      от 900 ₽
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="./goods.html" class="product-card">
-              <div class="product-card__image">
-                <img src="./img/rests/pizza-burger.jpg" alt="pizza-plus">
-              </div>
-              <div class="product-card__description">
-                <div class="product-card__description-row">
-                  <h4 class="product-card__title">
-                    PizzaBurger
-                  </h4>
-                  <div class="product-card__badge">50 мин</div>
-                </div>
-                <div class="product-card__description-row">
-                  <div class="product-card__description-info">
-                    <div class="product-card__description-info product-card__description-info_raiting">
-                      <img src="./img/icons/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_price">
-                      от 900 ₽
-                    </div>
-                    <div class="product-card__description-info product-card__description-info_group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+          <div class="product-wrapper" id="rests-container">
           </div>
         </div>
       </section>
